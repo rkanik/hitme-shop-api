@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+   <title>HitmeShop | API</title>
+
+   <style>
+      body {
+         padding-bottom: 4rem;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="jumbotron">
+      <h1 class="display-4">HITME SHOP API</h1>
+      <p class="lead">
+         A comparative study and integration of social e-commerce websites
+      </p>
+      <hr class="my-4" />
+      <p>
+         <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh"
+            target="_blank">Download</a>
+         this chrome extension to preview output in JSON fotmat
+      </p>
+      <p><span>Domain : https://hitme-shop-api.herokuapp.com/</span><span> Version : v1</span></p>
+      <p>API : <a href="https://hitme-shop-api.herokuapp.com/v1/">https://hitme-shop-api.herokuapp.com/v1/</a></p>
+   </div>
+   <div>
+      <div class="container">
+         <strong>ALL ENDPOINTS</strong>
+         <div class="row my-0 mb-4">
+            <div class="col-md-3">
+               <p>API / categories</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/categories">/</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/categories/Electronics">/:main</a><span> </span><a
+                        href="/v1/categories/Mobiles">/:sub</a> <span>
+                     </span><a href="/v1/categories/Samsung">/:cat</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/categories/main/Electronics">main/main-cat-name</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/categories/sub/Laptops and Notebooks">sub/sub-cat-name</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/categories/cat/Apple">cat/category-name</a>
+                  </li>
+                  <li class=" list-group-item">
+                     <a href="/v1/categories/sub-with-cats/Electronics">sub-with-cats/main-cat-name</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <p>API / sliders</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/sliders">/</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/sliders/5db1f4cf64648d10bbd6a319">/_id</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/sliders/website/Daraz">/website/website-name</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <p>API / products</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/products">/</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/products/5dbeed27b6d6e669c51fe822">/_id</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/products?page=1">?page=pageNo</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/products?cat=Samsung">?cat=catName</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/products?scat=Mobiles">?scat=sCatName</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/products?mcat=Men's Fashion">?mcat=mCatName</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a
+                        href="/v1/products?mcat=Electronics&scat=Mobiles&cat=Samsung">?cat=catName&scat=sCatName&mcat=mCatName</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <p>API / reviews</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/reviews?page=1">/?page=1</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/reviews/5dbeed27b6d6e669c51fe822">/_id</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="row my-0">
+            <div class="col-md-3">
+               <p>API / search</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/search/Samsung galaxy">/:keyword</a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="/v1/search/suggestions/vivo">/suggestions/:keyword</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <p>API / compare</p>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     <a href="/v1/compare/Samsung galaxy a30">/:title</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
